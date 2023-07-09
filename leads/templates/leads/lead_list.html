@@ -1,0 +1,8 @@
+<h1>Leads</h1>
+
+{% for lead in leads %}
+
+<li>
+  <a href="{% url 'lead' lead.id %}">{{lead}}</a>
+</li>
+{% endfor %}
